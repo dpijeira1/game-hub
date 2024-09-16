@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 
 //This is for each game object in results. Each Game object has many properties, but we just want id and name
-interface Game {
+export interface Game {
   id: number;
   name: string;
+  background_image: string;
 }
 
 //Model this after the response for the games endpoint in the API, results returns an array of Game objects
