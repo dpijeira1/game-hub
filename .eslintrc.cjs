@@ -16,6 +16,15 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    "import/no-unused-modules": [2, {"unusedExports": true}],
+    "import/no-unused-modules": [2, { "unusedExports": true }],
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
   },
 }
